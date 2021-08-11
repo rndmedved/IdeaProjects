@@ -20,7 +20,7 @@ public class ClassForCalculateMortgage {
         Раскоментируй код, если хочешь вручную вводить год, месяц, день, сумму, процент и время выплати кредита.
         __________________________________________________________________
          */
-
+/*
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите год взятия кредита");
         year = Integer.parseInt((bufferedReader.readLine()));
@@ -34,7 +34,7 @@ public class ClassForCalculateMortgage {
         timeCredit = Integer.parseInt((bufferedReader.readLine()));
         System.out.println("Введите процент, под который вам выдают кредит");
         percent = Double.parseDouble((bufferedReader.readLine()));
-
+*/
 
 
 
