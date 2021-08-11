@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mortgage:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mortgage_jar</output-path>
+    <root id="archive" name="mortgage.jar">
+      <element id="module-output" name="mortgage" />
+      <element id="library" level="project" name="poi-ooxml-schemas-4.1.2" />
+      <element id="library" level="project" name="poi-scratchpad-4.1.2" />
+      <element id="library" level="project" name="poi-examples-4.1.2" />
+      <element id="library" level="project" name="poi-4.1.2" />
+      <element id="library" level="project" name="poi-ooxml-4.1.2" />
+      <element id="library" level="project" name="xmlbeans-3.1.0" />
+      <element id="library" level="project" name="poi-excelant-4.1.2" />
+      <element id="library" level="project" name="curvesapi-1.06" />
+    </root>
+  </artifact>
+</component>
