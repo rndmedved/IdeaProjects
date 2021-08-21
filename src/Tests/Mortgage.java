@@ -63,7 +63,8 @@ public class Mortgage {
             }
             payPercent += body * percent/100 / daysInYear(year)*day;
             body = body - (calculateMortgage() - payPercent);
-            System.out.printf("%d.%d.%d выплаты по процентам составили %.2f , Выплаты основного долга %.2f , Остаток по основному долгу %.2f\n", day, month, year, payPercent, calculateMortgage() - payPercent, body);
+            System.out.printf("%d.%d.%d выплаты по процентам составили %.2f , Выплаты основного долга %.2f , Остаток по основному долгу %.2f\n",
+                    day, month, year, payPercent, calculateMortgage() - payPercent, body);
 
         }
     }
@@ -88,10 +89,11 @@ public class Mortgage {
             payPercent += body * percent/100 / daysInYear(year)*day;
             body = body - (payMonth - payPercent);
             overpay += payPercent;
-            System.out.printf("%d.%d.%d выплаты по процентам составили %.2f , Выплаты основного долга %.2f , Остаток по основному долгу %.2f\n", day, month, year, payPercent, calculateMortgage() - payPercent, body);
+            System.out.printf("%d.%d.%d выплаты по процентам составили %.2f , Выплаты основного долга %.2f , Остаток по основному долгу %.2f\n",
+                    day, month, year, payPercent, calculateMortgage() - payPercent, body);
 
         }
-        System.out.printf("Переплата банку составила %.2f\n", overpay);
+        System.out.printf("Переплата банку составила %.2f\n", overpay - (payMonth+ body));
     }
 
     public Mortgage(double bodyOfCredit, double percent, int timeCredit){

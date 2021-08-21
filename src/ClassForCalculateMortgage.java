@@ -7,13 +7,13 @@ import java.io.InputStreamReader;
 public class ClassForCalculateMortgage {
 
     public static void main(String[] args) throws IOException {
-        int timeCredit =216;
-        double credit =3035000;
+        int timeCredit =103;
+        double credit =397475.85;
         double insurance ;
         double percent = 6.4;
         int day = 21;
-        int month = 9;
-        int year = 2020;
+        int month = 8;
+        int year = 2021;
 
         /*
         ------------------------------------------------------------------
@@ -47,9 +47,9 @@ public class ClassForCalculateMortgage {
  //       mortgage.setInsurance(insurance);
 //        System.out.printf("Ежемесячный платеж со страховкой %.2f\n", mortgage.calculateMortgageUseInsurance());
 //        System.out.printf("Переплата по кредиту с учетом страховки %.2f\n", mortgage.overPay(mortgage.calculateMortgageUseInsurance()));
-        mortgage.calculateMortgagePerPercent(year, month, day); //Расчет ежемесячных выплат при оплате только ежмесячного платежа
-        //mortgage.setPayMonth(mortgage.calculateMortgage()); // Установление ежемесячного платежа (он не может быть меньше mortgage.calculateMortgage())
-        //mortgage.calculateMortgagePerPayMonth(year, month, day);//Расчет ежемесячных выплат с учетом увеличения ежемесячного платежа.
+        //mortgage.calculateMortgagePerPercent(year, month, day); //Расчет ежемесячных выплат при оплате только ежмесячного платежа
+        mortgage.setPayMonth(mortgage.calculateMortgage()); // Установление ежемесячного платежа (он не может быть меньше mortgage.calculateMortgage())
+        mortgage.calculateMortgagePerPayMonth(year, month, day);//Расчет ежемесячных выплат с учетом увеличения ежемесячного платежа.
 
 
 
